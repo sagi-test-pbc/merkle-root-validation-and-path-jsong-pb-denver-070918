@@ -19,9 +19,9 @@ current_level = [bytes.fromhex(x)[::-1] for x in tx_hex_hashes]
 print(merkle_root(current_level)[::-1].hex())
 ```
 
-### Exercise 5
+### Exercise
 
-#### 5.1. Validate the merkle root for this block on Testnet:
+#### Validate the merkle root for this block on Testnet:
 Block Hash:
 ```
 0000000000000451fa80fcdb243b84c35eaae215a85a8faa880559e8239e6f20
@@ -42,12 +42,6 @@ e8270fb475763bc8d855cfe45ed98060988c1bdcad2ffc8364f783c98999a208
 15535864799652347cec66cba473f6d8291541238e58b2e03b046bc53cfe1321
 1c8af7c502971e67096456eac9cd5407aacf62190fc54188995666a30faf99f0
 3311f8acc57e8a3e9b68e2945fb4f53c07b0fa4668a7e5cda6255c21558c774d
-```
-
-#### 5.2. Make [these tests](/edit/session7/block.py) pass.
-```
-block.py:BlockTest:test_validate_merkle_root
-block.py:BlockTest:test_calculate_merkle_tree
 ```
 
 
@@ -75,10 +69,7 @@ tx_hex_hashes = [
 # hex() the reversed root
 ```
 
-
-```python
 ### Test Driven Exercise
-```
 
 
 ```python
@@ -126,14 +117,9 @@ for i in range(total_levels):
 print(merkle_path)
 ```
 
-### Exercise 6
+### Exercise
 
 #### 6.1. Get the Merkle Path for an item at index 13 (0-base) in 27 items.
-
-#### 6.2. Make [this test](/edit/session7/helper.py) pass.
-```
-helper.py:HelperTest:test_merkle_path
-```
 
 
 ```python
