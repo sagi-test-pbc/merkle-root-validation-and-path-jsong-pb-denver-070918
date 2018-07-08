@@ -19,7 +19,7 @@ current_level = [bytes.fromhex(x)[::-1] for x in tx_hex_hashes]
 print(merkle_root(current_level)[::-1].hex())
 ```
 
-### Exercise
+### Try it
 
 #### Validate the merkle root for this block on Testnet:
 Block Hash:
@@ -46,8 +46,6 @@ e8270fb475763bc8d855cfe45ed98060988c1bdcad2ffc8364f783c98999a208
 
 
 ```python
-# Exercise 5.1
-
 from helper import double_sha256, merkle_root
 
 tx_hex_hashes = [
@@ -102,6 +100,8 @@ class Block(Block):
         pass
 ```
 
+### Merkle Paths
+
 
 ```python
 # Merkle Path Example
@@ -117,9 +117,9 @@ for i in range(total_levels):
 print(merkle_path)
 ```
 
-### Exercise
+### Try it
 
-#### 6.1. Get the Merkle Path for an item at index 13 (0-base) in 27 items.
+#### Get the Merkle Path for an item at index 13 (0-base) in 27 items.
 
 
 ```python
@@ -137,6 +137,8 @@ index = 13
     # index integer div by 2 to get the index at the next level
 # print merkle path
 ```
+
+### Test Driven Exercise
 
 
 ```python
